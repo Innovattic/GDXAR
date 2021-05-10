@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/arCheckFragment"
+    >
+
+    <fragment
+        android:id="@+id/arCheckFragment"
+        android:name="com.innovattic.gdxarsample.ui.IntroFragment"
+        android:label="ArCheckFragment"
+        >
+        <action
+            android:id="@+id/action_arCheckFragment_to_helloNonArFragment"
+            app:destination="@id/nonArFragment"
+            />
+        <action
+            android:id="@+id/action_arCheckFragment_to_helloArFullFragment"
+            app:destination="@id/arFragment"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/nonArFragment"
+        android:name="com.innovattic.gdxarsample.ui.nonar.NonArFragment"
+        android:label="HelloNonArFragment"
+        />
+    <fragment
+        android:id="@+id/arFragment"
+        android:name="com.innovattic.gdxarsample.ui.ar.SampleArFragment"
+        android:label="HelloArFullFragment"
+        />
+</navigation>
